@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<title>Amanda Alfaro Prog1</title>
@@ -9,12 +8,9 @@
 	<script type="text/javascript" src = "webgl-debug.js"></script>
 	<script type="text/javascript" src = "cuon-matrix.js"></script>
 	<script type="text/javascript" src = "cuon-utils.js"></script>
-
 </head>
 
-
 <body onload="init()">
-
 	<canvas id = "webgl" width = "500px" height = "500px">
 		This content requires
 	</canvas>
@@ -23,17 +19,16 @@
 	<script id = "vertexShader" type="x-shader/x-vertex">
 		precision mediump float;
 		attribute vec4 vertexPosition;
-		void main(){
+		void main()	{
 			gl_Position = vertexPosition;
 		}
 	</script>
-
+	
 	<!-- Fragment Shader -->
 	<script id = "fragmentShader" type="x-shader/x-fragment">
-		void main(){
-			gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
+		void main()	{
+			gl_FragColor = vec4(0.9, 0.9, 0.1, 0.92);
 		}
 	</script>
-
 </body>
 </html>
